@@ -1,0 +1,9 @@
+[package]
+name = "png2goo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+goo = "0.1"          # Elegoo .goo encode/decode crate
+image = "0.25"       # read PNG
+anyhow = "1.0"
