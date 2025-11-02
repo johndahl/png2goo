@@ -25,8 +25,14 @@ Successful tests has been made on a Elegoo Saturn 4 Ultra. The code has only bee
 ## Build
 `docker compose build`
 
+## Add a data folder
+### Create directory
+`mkdir data` 
+### Add your png file to the directory
+`cp path/to/img.png data/img.png` 
+
 ## Usage
-The docker container assumes that the input png file is located in the /data directory. The output will also be stored there after the following command has been run. 
+The docker container assumes that the input png file is located in the /data directory. The output .goo file will also be stored there after the following command is done. 
 `docker run --rm -v "$PWD/data:/data" png2goo INPUT_NAME.png OUTPUT_NAME.goo 11520 5120 30 0.05`
 
 
