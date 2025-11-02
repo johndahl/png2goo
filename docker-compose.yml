@@ -1,0 +1,12 @@
+services:
+  png2goo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: png2goo:latest
+    user: "1000:1000"     # map to your host UID/GID if you want
+    working_dir: /data
+    volumes:
+      - ./data:/data
+    entrypoint: ["/usr/local/bin/entrypoint.sh"]
+    command: ["--help"]
